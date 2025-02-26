@@ -42,7 +42,7 @@ const LoginPage = () => {
 									size={20}
 								/>
 								<input
-								    value={password}
+								value={password}
 									onChange={(e) => setPassword(e.target.value)}
 									className="pl-10 mt-2 p-2 border rounded w-80"
 									type={showPassword ? "text" : "password"}
