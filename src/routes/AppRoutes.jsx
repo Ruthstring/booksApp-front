@@ -6,12 +6,20 @@ import MainPage from "../pages/MainPage";
 
 const AppRoutes = () => {
 	return (
+		// <Router>
+		// 	<Routes>
+		// 		<Route path="/" element={<LandingPage />} />
+		// 		<Route path="/login" element={<LoginPage />} />
+		// 		<Route path="/register" element={<RegisterPage />} />
+		// 		<Route path="/main" element={<MainPage />} />
+		// 	</Routes>
+		// </Router>
 		<Router>
 			<Routes>
-				<Route path="/" element={<LandingPage />} />
+				{/* <Route path="/" element={<LandingPage />} />
 				<Route path="/login" element={<LoginPage />} />
-				<Route path="/register" element={<RegisterPage />} />
-				<Route path="/main" element={<MainPage />} />
+				<Route path="/register" element={<RegisterPage />} /> */}
+				<Route path="/" element={<MainPage />} />
 			</Routes>
 		</Router>
 	);
