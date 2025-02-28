@@ -10,12 +10,13 @@ const Button = ({ children, onClick, className = "" }) => {
 			{/* ✨ Gradient Border Button */}
 			<button
 				onClick={onClick}
-				className={`relative px-8 py-3 text-white font-medium rounded-full 
+				className={`relative px-8 py-3 font-medium rounded-full 
+					text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500
         bg-transparent border-2
         before:absolute before:inset-0 before:rounded-full before:p-[2px] 
         before:bg-gradient-to-r before:from-blue-400 before:to-purple-500 
         before:content-[''] before:-z-10 
-        before:border-transparent before:outline before:outline-[2px] before:outline-gradient
+        before:border-transparent before:outline-gradient
         hover:before:opacity-80 transition-all duration-300
         ${className}`}
 			>

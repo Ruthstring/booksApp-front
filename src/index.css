@@ -48,3 +48,15 @@ body {
   background: #EC4899 !important; /* Example: Yellow */
   opacity: 1;
 }
+
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none; /* IE & Edge */
+}

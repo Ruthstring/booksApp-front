@@ -23,11 +23,12 @@ const Navbar = () => {
           <img src="/logo.svg" alt="BookApp Logo" className="h-10 w-10" />
         </div>
 
+        <div className="flex items-center gap-10">
         {/* ✅ Navigation Links */}
-        <ul className="flex gap-6 text-lg">
+        <ul className="flex gap-6">
           <li
             onClick={() => navigate("/")}
-            className={` text-2xl cursor-pointer hover:text-blue-400 transition ${
+            className={`search-text cursor-pointer hover:text-blue-400 transition ${
               isActive("/") ? "hidden" : "flex"
             }`}
           >
@@ -36,7 +37,7 @@ const Navbar = () => {
           <li
             onClick={() => navigate("/books")}
             className={`search-text cursor-pointer hover:text-blue-400 transition ${
-              isActive("/books") ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500" : ""
+              isActive("/search") ? "hidden" : ""
             }`}
           >
             AI BookFinder
@@ -44,7 +45,7 @@ const Navbar = () => {
           <li
             onClick={() => navigate("/profile")}
             className={`search-text cursor-pointer hover:text-blue-400 transition ${
-              isActive("/profile") ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500" : ""
+              isActive("/profile") ? "hidden" : ""
             }`}
           >
             MyBooks
@@ -70,6 +71,7 @@ const Navbar = () => {
               fill="none"
             />
           </svg>
+        </div>
         </div>
         
       </nav>
