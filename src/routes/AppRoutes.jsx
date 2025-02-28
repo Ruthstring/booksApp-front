@@ -5,6 +5,7 @@ import RegisterPage from "../pages/RegisterPage";
 import MainPage from "../pages/MainPage";
 import AiSearchPage from "../pages/AiSearchPage";
 import BookRecommendationPage from "../pages/BookRecommendationPage";
+import UserList from "../pages/UserList";
 
 
 const AppRoutes = () => {
@@ -23,6 +24,7 @@ const AppRoutes = () => {
 				<Route path="/" element={<MainPage />} />
 				<Route path="/search" element={<AiSearchPage/>} />
 				<Route path="/rec" element={<BookRecommendationPage/>}/>
+				<Route path="/list" element={<UserList/>}/>
 			</Routes>
 		</Router>
 	);
