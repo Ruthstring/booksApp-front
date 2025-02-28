@@ -12,7 +12,7 @@ const MobileBottomBar = () => {
     return (
 		<>
 			{/* ✅ Bottom Navigation Bar */}
-			<div className="flex md:hidden fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 justify-between items-center">
+			<div className="flex sm:hidden fixed bottom-0 left-0 w-full bg-gray-900 text-white p-4 justify-between items-center">
 				{/* Home Icon */}
 				<button
 					onClick={() => navigate("/home")}

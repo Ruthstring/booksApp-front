@@ -1,5 +1,6 @@
 import { useNavigate, useLocation } from "react-router-dom";
 import SearchBar from "./SearchBar";
+import "../index.css"
 
 
 
@@ -26,15 +27,15 @@ const Navbar = () => {
         <ul className="flex gap-6 text-lg">
           <li
             onClick={() => navigate("/")}
-            className={`cursor-pointer hover:text-blue-400 transition ${
-              isActive("/") ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500" : ""
+            className={` text-2xl cursor-pointer hover:text-blue-400 transition ${
+              isActive("/") ? "hidden" : "flex"
             }`}
           >
-            Home
+             Home
           </li>
           <li
             onClick={() => navigate("/books")}
-            className={`cursor-pointer hover:text-blue-400 transition ${
+            className={`search-text cursor-pointer hover:text-blue-400 transition ${
               isActive("/books") ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500" : ""
             }`}
           >
@@ -42,7 +43,7 @@ const Navbar = () => {
           </li>
           <li
             onClick={() => navigate("/profile")}
-            className={`cursor-pointer hover:text-blue-400 transition ${
+            className={`search-text cursor-pointer hover:text-blue-400 transition ${
               isActive("/profile") ? "text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500" : ""
             }`}
           >
@@ -57,7 +58,7 @@ const Navbar = () => {
         </div>
 
         {/* ✅ Profile Letter Avatar with Gradient Stroke */}
-        <div className="relative flex items-center justify-center h-10 w-10 text-lg font-bold text-white bg-gray-900 rounded-full">
+        <div className="search-text relative flex items-center justify-center h-10 w-10 text-lg font-bold text-white bg-gray-900 rounded-full">
           M {/* Replace with dynamic user initial */}
           <svg className="absolute w-full h-full">
             <circle
@@ -86,26 +87,6 @@ const Navbar = () => {
   );
 
 
-  // const navigate = useNavigate();
-
-  // return (
-  //   <nav className="hidden sm:flex justify-between p-4 bg-gray-900 text-white w-full transition-opacity duration-500 ease-in-out">
-  //     <h1 className="text-xl font-bold">BookApp</h1>
-  //     <ul className="flex gap-6">
-  //       <li onClick={() => navigate("/home")} className="cursor-pointer hover:text-blue-400">
-  //         Home
-  //       </li>
-  //       <li onClick={() => navigate("/books")} className="cursor-pointer hover:text-blue-400">
-  //         Books
-  //       </li>
-  //       <li onClick={() => navigate("/profile")} className="cursor-pointer hover:text-blue-400">
-  //         Profile
-  //       </li>
-  //     </ul>
-  //      {/* ✅ Search Bar */}
-  //      <SearchBar className="hidden sm:flex" />
-  //   </nav>
-  // );
   };
   
   export default Navbar;

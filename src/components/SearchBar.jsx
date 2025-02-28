@@ -1,14 +1,14 @@
 import { Search } from "lucide-react";
 import "../index.css"
 
-const SearchBar = ({ placeholder = "Search for books..." }) => {
+const SearchBar = ({ placeholder = "Title..." }) => {
   return (
     <div className="search-container">
       {/* ✅ Search Input */}
       <input type="text" placeholder={placeholder} className="search-input" />
 
       {/* ✅ Search Icon */}
-      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={20} />
+      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" size={15} />
     </div>
   );
 };
